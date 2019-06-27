@@ -1,0 +1,14 @@
+{
+    "usingComponents": {
+      "van-search": "/static/dist/search/index",
+      "top": "/static/top/index"
+    },
+  
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#42BD56",
+    "navigationBarTitleText": "more",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "navigationStyle": "custom"
+  }
+  

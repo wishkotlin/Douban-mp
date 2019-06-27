@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-search": "/static/dist/search/index",
+    "top": "/static/top/index"
+  },
+
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "榜单",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}
