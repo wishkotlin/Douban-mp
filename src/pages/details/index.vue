@@ -1,93 +1,88 @@
 <template>
-  <div class="main">
+  <div class="main" v-if="flag">
     <top :title="title" :show_bol="false" :my_class="false"></top>
-    <div v-if="flag">
-      <div class="head">
-        <div class="head-left">
-          <img id="img" v-bind:mode="'aspectFit'" :src="list.images && list.images.small" alt>
-          <!-- <canvas canvas-id="img-canvas"></canvas> -->
+    <div class="head">
+      <div class="head-left">
+        <img id="img" v-bind:mode="'aspectFit'" :src="list.images && list.images.small" alt>
+        <!-- <canvas canvas-id="img-canvas"></canvas> -->
+      </div>
+      <div class="head-right">
+        <div class="title">{{list.title}}</div>
+        <div class="orititle">{{list.original_title}}</div>
+        <div class="genres">
+          <span v-for="(item,index) in list.genres" :key="index">{{item}}</span>
+          /
+          <span>{{list.countries && list.countries[0]}}</span>
+          /
+          <span>{{list.durations && list.durations[0]}}</span>
         </div>
-        <div class="head-right">
-          <div class="title">{{list.title}}</div>
-          <div class="orititle">{{list.original_title}}</div>
-          <div class="genres">
-            <span v-for="(item,index) in list.genres" :key="index">{{item}}</span>
-            /
-            <span>{{list.countries && list.countries[0]}}</span>
-            /
-            <span>{{list.durations && list.durations[0]}}</span>
-          </div>
-          <div class="watch">
-            <span>
-              <i class="iconfont icon-xiangkan"></i> 想看
-            </span>
-            <span>
-              <i class="iconfont icon-star1"></i> 看过
-            </span>
-          </div>
+        <div class="watch">
+          <span>
+            <i class="iconfont icon-xiangkan"></i> 想看
+          </span>
+          <span>
+            <i class="iconfont icon-star1"></i> 看过
+          </span>
         </div>
       </div>
-      <div class="rate">
-        <div class="rate-title">
-          <span>
-            豆瓣评分
-            <span>TM</span>
-          </span>
-          <span>
-            <i class="iconfont icon-jiantou"></i>
-          </span>
-        </div>
-        <div class="rate-main">
-          <span class="rate-main-left">
-            <div>{{list.rating && list.rating.average}}</div>
+    </div>
+    <div class="rate">
+      <div class="rate-title">
+        <span>
+          豆瓣评分
+          <span>TM</span>
+        </span>
+        <span>
+          <i class="iconfont icon-jiantou"></i>
+        </span>
+      </div>
+      <div class="rate-main">
+        <span class="rate-main-left">
+          <div>{{list.rating && list.rating.average}}</div>
+          <div>
+            <rate :rating="list.rating && list.rating.average" :max="10" v-bind:list="[1,2,3,4,5]"></rate>
+          </div>
+        </span>
+        <span class="rate-main-right">
+          <span class="rate-main-right-main">
             <div>
-              <rate
-                :rating="list.rating && list.rating.average"
-                :max="10"
-                v-bind:list="[1,2,3,4,5]"
-              ></rate>
+              <i class="iconfont icon-star"></i>
+            </div>
+            <div>
+              <i class="iconfont icon-star"></i>
+              <i class="iconfont icon-star"></i>
+            </div>
+            <div>
+              <i class="iconfont icon-star"></i>
+              <i class="iconfont icon-star"></i>
+              <i class="iconfont icon-star"></i>
+            </div>
+            <div>
+              <i class="iconfont icon-star"></i>
+              <i class="iconfont icon-star"></i>
+              <i class="iconfont icon-star"></i>
+              <i class="iconfont icon-star"></i>
+            </div>
+            <div>
+              <i class="iconfont icon-star"></i>
+              <i class="iconfont icon-star"></i>
+              <i class="iconfont icon-star"></i>
+              <i class="iconfont icon-star"></i>
+              <i class="iconfont icon-star"></i>
             </div>
           </span>
-          <span class="rate-main-right">
-            <span class="rate-main-right-main">
-              <div>
-                <i class="iconfont icon-star"></i>
-              </div>
-              <div>
-                <i class="iconfont icon-star"></i>
-                <i class="iconfont icon-star"></i>
-              </div>
-              <div>
-                <i class="iconfont icon-star"></i>
-                <i class="iconfont icon-star"></i>
-                <i class="iconfont icon-star"></i>
-              </div>
-              <div>
-                <i class="iconfont icon-star"></i>
-                <i class="iconfont icon-star"></i>
-                <i class="iconfont icon-star"></i>
-                <i class="iconfont icon-star"></i>
-              </div>
-              <div>
-                <i class="iconfont icon-star"></i>
-                <i class="iconfont icon-star"></i>
-                <i class="iconfont icon-star"></i>
-                <i class="iconfont icon-star"></i>
-                <i class="iconfont icon-star"></i>
-              </div>
-            </span>
-            <span class="process">
-              <progress
-                :percent="itme"
-                color="#f3df29"
-                stroke-width="10rpx"
-                border-radius="10rpx"
-                active="true"
-                backgroundColor="#dbdbdb"
-                v-for="(itme,index) in percent"
-                :key="index"
-              ></progress>
-              <!-- <progress
+          <span class="process">
+            <progress
+              :percent="itme"
+              color="#f3df29"
+              stroke-width="10rpx"
+              border-radius="10rpx"
+              active="true"
+              backgroundColor="#dbdbdb"
+              v-for="(itme,index) in percent"
+              :key="index"
+            ></progress>
+            <!-- <progress
               :percent="percent"
               color="#f3df29"
               stroke-width="10rpx"
@@ -118,15 +113,14 @@
               border-radius="10rpx"
               active="true"
               backgroundColor="#dbdbdb"
-              ></progress>-->
-            </span>
+            ></progress>-->
           </span>
-        </div>
+        </span>
       </div>
-      <div class="intro">
-        <div>简介</div>
-        <div></div>
-      </div>
+    </div>
+    <div class="intro">
+      <div>简介</div>
+      <div></div>
     </div>
   </div>
 </template>
@@ -134,7 +128,6 @@
 import analyze from "rgbaster";
 import rate from "@/components/rate.vue";
 const dataArr = [];
-
 export default {
   data() {
     return {

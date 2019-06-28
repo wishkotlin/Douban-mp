@@ -44,7 +44,6 @@ z-index: 999;
 }
 .tabar text {
   padding: 20rpx 30rpx;
-  color: #353535;
   font-size: 12pt;
   font-weight: bold;
 }
@@ -56,4 +55,5 @@ z-index: 999;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 300rpx;
+  text-align: center;
 }
