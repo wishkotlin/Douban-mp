@@ -1,7 +1,11 @@
 <template>
   <div>
     <div class="mine-top">
-      <img v-bind:mode="'aspectFit'" src="/static/img/myback.png" alt>
+      <img
+        v-bind:mode="'aspectFit'"
+        src="https://ws1.sinaimg.cn/large/8660d1bbly1g4gjoufe67j20v90hhdgg.jpg"
+        alt
+      >
       <div class="btn">登录</div>
     </div>
     <div class="main">
@@ -12,22 +16,22 @@
           <i class="iconfont icon-jiantou jiantou"></i>
         </span>
       </div>
-      <div class="mine-top-con">
+      <div class="mine-top-con" v-for="(item,index) in list" :key="index">
         <div class="mine-top-con-one">
-          <img class="img" v-bind:mode="'aspectFit'" src="/static/img/movie.png" alt>
+          <img class="img" v-bind:mode="'aspectFit'" :src="item.img" alt>
           <!-- <div class="img"></div> -->
           <!-- <i class="iconfont icon-yingyinhuiyuan img"></i> -->
         </div>
-        <span class="line">
+        <span class="line" :class="{'line-bottom': !(index >= list.length - 1)}">
           <div class="mine-top-con-two">
-            <span>观影分析</span>
+            <span>{{item.titleone}}</span>
             <span>
-              <span>0</span> 看过
+              <span>{{item.titletwo}}</span> 看过
             </span>
           </div>
           <div class="mine-top-con-three">
-            <span>标记10部影片</span>
-            <span>开分观影分析</span>
+            <span>{{item.contentone}}</span>
+            <span>{{item.contenttwo}}</span>
           </div>
           <div class="mine-top-con-four">
             <div>
@@ -47,8 +51,22 @@ export default {
   props: {},
   data() {
     return {
-
+      list: []
     };
+  },
+  mounted() {
+    let Fly = require("../../../static/fly/wx.umd.min.js"); //wx.js为您下载的源码文件
+    let fly = new Fly();
+    fly
+      .get("http://192.168.43.122:8081/moock/mine.json")
+      .then(response => {
+        console.log(response);
+        this.list = response.data.info;
+        console.log(this.list);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
   }
 };
 </script>
@@ -57,8 +75,10 @@ export default {
 <style lang="scss" scoped>
 .line {
   width: 85%;
-  border-bottom: 1px solid rgba(207, 206, 206, 0.5);
   display: flex;
+}
+.line-bottom {
+  border-bottom: 1px solid rgba(207, 206, 206, 0.3);
 }
 .mine-top {
   position: relative;
@@ -168,7 +188,7 @@ export default {
       padding-bottom: 25rpx;
       justify-content: flex-end;
       .start {
-        background: rgb(223, 215, 215);
+        background: rgb(241, 238, 238);
         padding: 8rpx;
         border-radius: 6rpx;
       }

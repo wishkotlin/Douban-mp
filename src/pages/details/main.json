@@ -1,0 +1,12 @@
+{
+    "usingComponents": {
+      "top": "/static/top/index"
+    },
+  
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#42BD56",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "navigationStyle": "custom"
+  }
+  

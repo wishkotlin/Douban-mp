@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="list-img">
-      <img v-bind:mode="'aspectFit'" src="/static/img/1.jpg" alt>
-      <img v-bind:mode="'aspectFit'" src="/static/img/2.jpg" alt>
-      <img v-bind:mode="'aspectFit'" src="/static/img/3.jpg" alt>
+      <img v-bind:mode="'aspectFit'" src="https://ws1.sinaimg.cn/large/8660d1bbly1g4gjoamlrfj20ri0chdih.jpg" alt>
+      <img v-bind:mode="'aspectFit'" src="https://ws1.sinaimg.cn/large/8660d1bbly1g4gjog350jj20ri0chq9a.jpg" alt>
+      <img v-bind:mode="'aspectFit'" src="https://ws1.sinaimg.cn/large/8660d1bbly1g4gjoj0rcqj20ri0chwl9.jpg" alt>
     </div>
     <div class="list-one">
       <div class="list-one-left"></div>

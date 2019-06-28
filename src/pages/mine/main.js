@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import App from './index'
 
-import { plugin } from 'vue-function-api'
+// import { plugin } from 'vue-function-api'
 
-Vue.use(plugin)
+// Vue.use(plugin)
 // add this to handle exception
 // Vue.config.errorHandler = function (err) {
 //   if (console && console.error) {

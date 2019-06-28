@@ -11,7 +11,7 @@
         </div>
       </a>
     </div>
-    <div>
+    <div class="hot">
       <!-- 影院热映 -->
       <div class="Cinema">
         <text>影院热映</text>
@@ -21,7 +21,12 @@
       </div>
       <scroll-view scroll-x="true">
         <div class="uploadWrap" :scroll-x="true">
-          <div class="upload_Item" :key="index" v-for="(item,index) in  in_theaters">
+          <a
+            :href="'/pages/details/main?id='+item.id+'&name='+item.title"
+            class="upload_Item"
+            :key="index"
+            v-for="(item,index) in  in_theaters"
+          >
             <!-- navigator：页面跳转链接 -->
             <img class="upload_Item_img" :src="item.images.large">
             <text>{{item.title}}</text>
@@ -33,7 +38,7 @@
               ></d-rate>
               <div class="munber-rate">{{item.rating.average}}</div>
             </div>
-          </div>
+          </a>
         </div>
       </scroll-view>
     </div>
@@ -111,7 +116,7 @@ export default {
         console.log(error);
       });
     // fly
-    //   .get("http://127.0.0.1:8081/moock/in_theaters.json")
+    //   .get("http://192.168.43.122:8081/moock/in_theaters.json")
     //   .then((response) => {
     //     console.log(response);
     //     this.in_theaters = response.data.subjects;
@@ -144,6 +149,9 @@ export default {
 </script>
 
 <style scoped>
+.hot {
+  height: 426rpx;
+}
 .search-btn {
   display: flex;
   justify-content: center;
@@ -160,7 +168,7 @@ export default {
   padding-left: 10rpx;
 }
 scroll-view {
-  height: 426rpx;
+  height: 330rpx;
 }
 .rate {
   width: 70%;
