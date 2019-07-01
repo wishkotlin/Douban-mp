@@ -11,6 +11,40 @@
         </div>
       </a>
     </div>
+    <div v-if="loade">
+      <div class="hot" :key="index" v-for="(item,index) in in_theaters">
+        <!-- 影院热映 -->
+        <div class="Cinema">
+          <text>{{item.subject_collection && item.subject_collection.name}}</text>
+          <a class="more" hover-class="none">
+            <text>查看更多 ></text>
+          </a>
+        </div>
+        <scroll-view scroll-x="true">
+          <div class="uploadWrap" :scroll-x="true">
+            <a class="upload_Item" :key="key + 1" v-for="(i,key) in  item.subject_collection_items">
+              <!-- navigator：页面跳转链接 -->
+              <div class="upload_Item_img loade"></div>
+              <!-- <img class="upload_Item_img" :src="i.cover.url && i.cover.url" /> -->
+              <text>{{i.title && i.title}}</text>
+              <div class="number-rate-out" :class="{'no-star': !i.rating}">
+                <!-- <d-rate
+                  :rating="i.rating && i.rating.value"
+                  :max="i.rating && i.rating.max"
+                  v-bind:list="[1,2,3,4,5]"
+                  v-if="i.rating"
+                ></d-rate>-->
+                <!-- <div class="munber-rate">
+                  <ratevalue :i="i"></ratevalue>
+                </div>-->
+                <!-- <div class="munber-rate" :class="{'no-star-rate': !i.rating}" v-if="!i.rating">暂无评分</div> -->
+              </div>
+            </a>
+          </div>
+        </scroll-view>
+      </div>
+    </div>
+
     <div class="hot" :key="index" v-for="(item,index) in in_theaters">
       <!-- 影院热映 -->
       <div class="Cinema">
@@ -90,13 +124,185 @@ export default {
   },
   data() {
     return {
+      loade: true,
       motto: "Hello miniprograme",
       userInfo: {
         nickName: "mpvue",
         avatarUrl: "http://mpvue.com/assets/logo.png"
       },
       value: "",
-      in_theaters: [],
+      in_theaters: [
+        {
+          subject_collection: {
+            name: "影院热映"
+          },
+          subject_collection_items: [
+            {
+              cover: {
+                url: ""
+              },
+              rating: {
+                value: "",
+                max: 10
+              }
+            },
+            {
+              cover: {
+                url: ""
+              },
+              rating: {
+                value: "",
+                max: 10
+              }
+            },
+            {
+              cover: {
+                url: ""
+              },
+              rating: {
+                value: "",
+                max: 10
+              }
+            }
+          ]
+        },
+        {
+          subject_collection: {
+            name: "豆瓣热门"
+          },
+          subject_collection_items: [
+            {
+              cover: {
+                url: ""
+              },
+              rating: {
+                value: "",
+                max: 10
+              }
+            },
+            {
+              cover: {
+                url: ""
+              },
+              rating: {
+                value: "",
+                max: 10
+              }
+            },
+            {
+              cover: {
+                url: ""
+              },
+              rating: {
+                value: "",
+                max: 10
+              }
+            }
+          ]
+        },
+        {
+          subject_collection: {
+            name: "近期热门剧集"
+          },
+          subject_collection_items: [
+            {
+              cover: {
+                url: ""
+              },
+              rating: {
+                value: "",
+                max: 10
+              }
+            },
+            {
+              cover: {
+                url: ""
+              },
+              rating: {
+                value: "",
+                max: 10
+              }
+            },
+            {
+              cover: {
+                url: ""
+              },
+              rating: {
+                value: "",
+                max: 10
+              }
+            }
+          ]
+        },
+        {
+          subject_collection: {
+            name: "近期热门综艺节目"
+          },
+          subject_collection_items: [
+            {
+              cover: {
+                url: ""
+              },
+              rating: {
+                value: "",
+                max: 10
+              }
+            },
+            {
+              cover: {
+                url: ""
+              },
+              rating: {
+                value: "",
+                max: 10
+              }
+            },
+            {
+              cover: {
+                url: ""
+              },
+              rating: {
+                value: "",
+                max: 10
+              }
+            }
+          ]
+        },
+        {
+          subject_collection: {
+            name: "畅销图书"
+          },
+          subject_collection_items: [
+            {
+              cover: {
+                url: ""
+              },
+              rating: {
+                value: "",
+                max: 10
+              }
+            },
+            {
+              cover: {
+                url: ""
+              },
+              rating: {
+                value: "",
+                max: 10
+              }
+            },
+            {
+              cover: {
+                url: ""
+              },
+              rating: {
+                value: "",
+                max: 10
+              }
+            }
+          ]
+        }
+      ],
       coming: []
     };
   },
@@ -146,6 +352,7 @@ export default {
             book_bestseller,
             music_single
           ) => {
+            this.in_theaters = [];
             this.in_theaters.unshift(
               movie_showing.data,
               movie_hot_gaia.data,
@@ -154,6 +361,7 @@ export default {
               book_bestseller.data
               // music_single.data
             );
+            this.loade = false;
             // this.coming = movie_hot_gaia.data;
             console.log(this.in_theaters);
             //两个请求都完成
@@ -380,6 +588,9 @@ scroll-view {
   height: 250rpx;
   margin: 0 0 0 20rpx;
   border-radius: 10rpx;
+}
+.loade {
+  background: rgb(228, 228, 228);
 }
 .upload_Item text {
   display: inline-block;

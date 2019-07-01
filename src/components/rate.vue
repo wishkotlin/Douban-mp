@@ -23,10 +23,10 @@
 export default {
   props: {
     rating: {
-      type: String
+      type: [String, Number]
     },
     max: {
-      type: String
+      type: [String, Number]
     }
   },
   computed: {

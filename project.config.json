@@ -96,10 +96,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 7,
 					"name": "详情",
 					"pathName": "pages/details/main",
-					"query": "id= 30269908&name=圆桌派",
+					"query": "id= 26931786&name=蜘蛛俠",
 					"scene": null
 				}
 			]
