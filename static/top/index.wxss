@@ -19,12 +19,12 @@ z-index: 999;
   left: 90rpx;
   font-size:12pt;
 }
-.home image{
+.home .img{
   width: 40rpx;
   height: 40rpx;
   padding: 0rpx 20px 0 30rpx;
 }
-.goBack image{
+.goBack .img{
   width: 40rpx;
   height: 40rpx;
   padding: 0rpx 20px 0 30rpx;
@@ -38,14 +38,20 @@ z-index: 999;
   background: #42BD56;
   /*background: transparent !important;*/
 }
-.tabar2 text{
+.tabar2 .red{
   color: #fff !important;
   font-weight: lighter !important;
+  height: 41rpx;
+
+
 }
-.tabar text {
+.tabar .red {
   padding: 20rpx 30rpx;
   font-size: 12pt;
   font-weight: bold;
+  height: 41rpx;
+
+
 }
 .tabar .active {
   color: #fff;

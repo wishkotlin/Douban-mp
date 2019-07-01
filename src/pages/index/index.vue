@@ -11,40 +11,47 @@
         </div>
       </a>
     </div>
-    <div class="hot">
+    <div class="hot" :key="index" v-for="(item,index) in in_theaters">
       <!-- 影院热映 -->
       <div class="Cinema">
-        <text>影院热映</text>
-        <a class="more" href="/pages/more/main?title=影院热评&key=in_theaters" hover-class="none">
+        <text>{{item.subject_collection && item.subject_collection.name}}</text>
+        <a
+          class="more"
+          :href="'/pages/more/main?title=' + item.subject_collection.name + '&key=' + item.subject_collection.id"
+          hover-class="none"
+        >
           <text>查看更多 ></text>
         </a>
       </div>
       <scroll-view scroll-x="true">
         <div class="uploadWrap" :scroll-x="true">
           <a
-            :href="'/pages/details/main?id='+item.id+'&name='+item.title"
+            :href="'/pages/details/main?id='+i.id+'&name='+i.title"
             class="upload_Item"
-            :key="index"
-            v-for="(item,index) in  in_theaters"
+            :key="key + 1"
+            v-for="(i,key) in  item.subject_collection_items"
           >
             <!-- navigator：页面跳转链接 -->
-            <img class="upload_Item_img" :src="item.images.large">
-            <text>{{item.title}}</text>
-            <div class="number-rate-out">
+            <img class="upload_Item_img" :src="i.cover.url" />
+            <text>{{i.title}}</text>
+            <div class="number-rate-out" :class="{'no-star': !i.rating}">
               <d-rate
-                :rating="item.rating.average"
-                :max="item.rating.max"
+                :rating="i.rating && i.rating.value"
+                :max="i.rating && i.rating.max"
                 v-bind:list="[1,2,3,4,5]"
+                v-if="i.rating"
               ></d-rate>
-              <div class="munber-rate">{{item.rating.average}}</div>
+              <div class="munber-rate">
+                <ratevalue :i="i"></ratevalue>
+              </div>
+              <div class="munber-rate" :class="{'no-star-rate': !i.rating}" v-if="!i.rating">暂无评分</div>
             </div>
           </a>
         </div>
       </scroll-view>
     </div>
 
-    <div>
-      <!-- 影院热映 -->
+    <!-- <div>
       <view class="Cinema">
         <text>豆瓣热门</text>
         <a class="more" href="/pages/more/main?title=豆瓣热门&key=coming" hover-class="none">
@@ -54,13 +61,13 @@
       <scroll-view scroll-x="true">
         <view class="uploadWrap" :scroll-x="true">
           <view class="upload_Item" :key="index" v-for="(item,index) in coming">
-            <!-- navigator：页面跳转链接 -->
-            <img class="upload_Item_img" :src="item.images.large">
+            <img class="upload_Item_img" :src="item.images.large" />
             <text>{{item.title}}</text>
           </view>
         </view>
       </scroll-view>
-    </div>
+    </div>-->
+
     <!-- <card :text="111"></card> -->
     <!-- <card :text="111"></card> -->
     <!-- <button> -->
@@ -74,10 +81,12 @@
 // import Fly from "/static/fly/wx.umd.min.js";
 import rate from "@/components/rate.vue";
 import card from "@/components/card.vue";
+import ratevalue from "@/components/ratevalue.vue";
 export default {
   components: {
     dRate: rate,
-    card
+    card,
+    ratevalue
   },
   data() {
     return {
@@ -94,23 +103,62 @@ export default {
   async mounted() {
     let Fly = require("../../../static/fly/wx.umd.min.js"); //wx.js为您下载的源码文件
     let fly = new Fly();
-    function getUserRecords() {
-      return fly.get("http://192.168.43.122:8081/moock/in_theaters.json");
+    function movie_showing() {
+      return fly.get("http://192.168.43.122:8081/moock/movie_showing.json");
     }
 
-    function getUserProjects() {
-      return fly.get("http://192.168.43.122:8081/moock/coming.json");
+    function movie_hot_gaia() {
+      return fly.get("http://192.168.43.122:8081/moock/movie_hot_gaia.json");
+    }
+
+    function tv_hot() {
+      return fly.get("http://192.168.43.122:8081/moock/tv_hot.json");
+    }
+
+    function tv_variety_show() {
+      return fly.get("http://192.168.43.122:8081/moock/tv_variety_show.json");
+    }
+
+    function book_bestseller() {
+      return fly.get("http://192.168.43.122:8081/moock/book_bestseller.json");
+    }
+
+    function music_single() {
+      return fly.get("http://192.168.43.122:8081/moock/music_single.json");
     }
 
     await fly
-      .all([getUserRecords(), getUserProjects()])
+      .all([
+        movie_showing(),
+        movie_hot_gaia(),
+        tv_hot(),
+        tv_variety_show(),
+        book_bestseller(),
+        music_single()
+      ])
       .then(
-        fly.spread((records, projects) => {
-          this.in_theaters = records.data.subjects;
-          this.coming = projects.data.entries;
-          console.log(records, projects);
-          //两个请求都完成
-        })
+        fly.spread(
+          (
+            movie_showing,
+            movie_hot_gaia,
+            tv_hot,
+            tv_variety_show,
+            book_bestseller,
+            music_single
+          ) => {
+            this.in_theaters.unshift(
+              movie_showing.data,
+              movie_hot_gaia.data,
+              tv_hot.data,
+              tv_variety_show.data,
+              book_bestseller.data
+              // music_single.data
+            );
+            // this.coming = movie_hot_gaia.data;
+            console.log(this.in_theaters);
+            //两个请求都完成
+          }
+        )
       )
       .catch(function(error) {
         console.log(error);
@@ -385,5 +433,13 @@ scroll-view {
 }
 .iconfont {
   font-size: 65rpx;
+}
+
+.no-star {
+  width: 100%;
+}
+.no-star-rate {
+  text-align: left;
+  width: 100%;
 }
 </style>

@@ -1,13 +1,27 @@
 <template>
   <div>
     <div class="list-img">
-      <img v-bind:mode="'aspectFit'" src="https://ws1.sinaimg.cn/large/8660d1bbly1g4gjoamlrfj20ri0chdih.jpg" alt>
-      <img v-bind:mode="'aspectFit'" src="https://ws1.sinaimg.cn/large/8660d1bbly1g4gjog350jj20ri0chq9a.jpg" alt>
-      <img v-bind:mode="'aspectFit'" src="https://ws1.sinaimg.cn/large/8660d1bbly1g4gjoj0rcqj20ri0chwl9.jpg" alt>
+      <a href="/pages/webview/main">
+        <img
+          v-bind:mode="'aspectFit'"
+          src="https://ws1.sinaimg.cn/large/8660d1bbly1g4gjoamlrfj20ri0chdih.jpg"
+          alt
+        />
+      </a>
+      <img
+        v-bind:mode="'aspectFit'"
+        src="https://ws1.sinaimg.cn/large/8660d1bbly1g4gjog350jj20ri0chq9a.jpg"
+        alt
+      />
+      <img
+        v-bind:mode="'aspectFit'"
+        src="https://ws1.sinaimg.cn/large/8660d1bbly1g4gjoj0rcqj20ri0chwl9.jpg"
+        alt
+      />
     </div>
     <div class="list-one">
-      <div class="list-one-left"></div>
-      <div class="list-one-right">
+      <a href="/pages/list_detail/main" class="list-one-left"></a>
+      <a href="/pages/list_detail/main" class="list-one-right">
         <ul class="list-one-ul">
           <li>
             1. 肖申克的救赎
@@ -22,7 +36,7 @@
             <span>9.4分</span>
           </li>
         </ul>
-      </div>
+      </a>
     </div>
   </div>
 </template>

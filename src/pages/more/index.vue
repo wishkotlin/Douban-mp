@@ -1,9 +1,9 @@
 <template>
   <div>
-    <top :title="title" :show_bol="false" :my_class="true" :home="false"></top>
+    <top :title="title" :show_bol="false" :my_class="false" :home="false"></top>
     <div class="list">
       <div :key="index" v-for="(item,index) in in_theaters" class="item">
-        <img :src="item.images.small" alt>
+        <img :src="item.cover.url" alt />
       </div>
     </div>
   </div>
@@ -40,9 +40,10 @@ export default {
       .get(`http://192.168.43.122:8081/moock/${this.$mp.query.key}.json`)
       .then(response => {
         console.log(response);
-        response.data.subjects && (this.in_theaters = response.data.subjects);
+        response.data.subject_collection_items &&
+          (this.in_theaters = response.data.subject_collection_items);
         response.data.entries && (this.in_theaters = response.data.entries);
-        console.log(this.in_theaters);
+        console.log("in_theaters", this.in_theaters);
       })
       .catch(function(error) {
         console.log(error);

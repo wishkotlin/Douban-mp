@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "van-search": "/static/dist/search/index",
+    "top": "/static/top/index"
+  },
+
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "豆瓣2018年度电影榜单",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true,
+  "navigationStyle": "custom"
+}

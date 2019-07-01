@@ -1,0 +1,788 @@
+{
+  "rating": {
+    "count": 1145542,
+    "max": 10,
+    "star_count": 4.5,
+    "value": 9.3
+  },
+  "lineticket_url":
+    "https://movie.douban.com/ticket/redirect/?url=https%3A%2F%2Fm.maoyan.com%2Fcinema%2Fmovie%2F1212%3F_v_%3Dyes%26merCode%3D1000011",
+  "gallery_topic_count": 4,
+  "pubdate": ["2019-06-21(中国大陆)"],
+  "last_episode_number": null,
+  "pic": {
+    "large":
+      "https://img1.doubanio.com/view/photo/m_ratio_poster/public/p2557573348.jpg",
+    "normal":
+      "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2557573348.jpg"
+  },
+  "vendor_count": 0,
+  "body_bg_color": "f9f6f4",
+  "is_tv": false,
+  "head_info": null,
+  "intro":
+    "千寻和爸爸妈妈一同驱车前往新家，在郊外的小路上不慎进入了神秘的隧道——他们去到了另外一个诡异世界—一个中世纪的小镇。远处飘来食物的香味，爸爸妈妈大快朵颐，孰料之后变成了猪！这时小镇上渐渐来了许多样子古怪、半透明的人。\n千寻仓皇逃出，一个叫小白的人救了他，喂了她阻止身体消 失的药，并且告诉她怎样去找锅炉爷爷以及汤婆婆，而且必须获得一份工作才能不被魔法变成别的东西。\n千寻在小白的帮助下幸运地获得了一份在浴池打杂的工作。渐渐她不再被那些怪模怪样的人吓倒，并从小玲那儿知道了小白是凶恶的汤婆婆的弟子。\n一次，千寻发现小白被一群白色飞舞的纸人打伤，为了救受伤的小白，她用河神送给她的药丸驱出了小白身体内的封印以及守封印的小妖精，但小白还是没有醒过来。\n为了救小白，千寻又踏上了她的冒险之旅。",
+  "ticket_price_info": "",
+  "vendor_icons": [],
+  "year": "2001",
+  "card_subtitle": "2001 / 日本 / 剧情 动画 奇幻 / 宫崎骏 / 柊瑠美 入野自由",
+  "forum_info": null,
+  "webisode": null,
+  "id": "1291561",
+  "languages": ["日语"],
+  "genres": ["剧情", "动画", "奇幻"],
+  "can_interact": true,
+  "review_count": 4330,
+  "title": "千与千寻",
+  "has_linewatch": false,
+  "ugc_tabs": [
+    {
+      "source": "reviews",
+      "type": "review",
+      "title": "影评"
+    },
+    {
+      "source": "gallery_topics",
+      "type": "gallery_topic",
+      "title": "话题"
+    },
+    {
+      "source": "forum_topics",
+      "type": "forum",
+      "title": "讨论"
+    }
+  ],
+  "forum_topic_count": 811,
+  "webview_info": {},
+  "is_released": true,
+  "vendors": [],
+  "actors": [
+    {
+      "name": "柊瑠美",
+      "roles": ["演员", "配音"],
+      "title": "柊瑠美（同名）日本,东京都影视演员",
+      "url": "https://movie.douban.com/celebrity/1023337/",
+      "abstract":
+        "　　柊 瑠美（非原名）（ひいらぎ るみ、1987年8月1日 - ）  　　出生地：东京都葛饰区 　　身高：15...",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1023337?subject_id=27229066",
+      "cover_url":
+        "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1463193210.13.jpg",
+      "avatar": {
+        "large":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1463193210.13.jpg",
+        "normal":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1463193210.13.jpg"
+      },
+      "type": "celebrity",
+      "id": "1023337",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1023337/"
+    },
+    {
+      "name": "入野自由",
+      "roles": ["配音", "演员"],
+      "title": "入野自由（同名）日本,东京影视演员",
+      "url": "https://movie.douban.com/celebrity/1005438/",
+      "abstract":
+        "　　入野自由，日本男性声优，隶属日本junction公司旗下。代表作品：《我们仍未知道那天所看见的花的名...",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1005438?subject_id=27211129",
+      "cover_url":
+        "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p44986.jpg",
+      "avatar": {
+        "large":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p44986.jpg",
+        "normal":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p44986.jpg"
+      },
+      "type": "celebrity",
+      "id": "1005438",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1005438/"
+    },
+    {
+      "name": "夏木真理",
+      "roles": ["演员", "配音"],
+      "title": "夏木真理（同名）日本,东京影视演员",
+      "url": "https://movie.douban.com/celebrity/1045797/",
+      "abstract":
+        "原名中岛淳子，1952年5月2日出生于日本东京都，女性声优。曾经担任日本动画电影《千与千寻》中汤婆婆的...",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1045797?subject_id=27251555",
+      "cover_url":
+        "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1376151005.51.jpg",
+      "avatar": {
+        "large":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1376151005.51.jpg",
+        "normal":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1376151005.51.jpg"
+      },
+      "type": "celebrity",
+      "id": "1045797",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1045797/"
+    },
+    {
+      "name": "菅原文太",
+      "roles": ["演员", "配音"],
+      "title": "菅原文太（同名）日本,宫城影视演员",
+      "url": "https://movie.douban.com/celebrity/1025558/",
+      "abstract":
+        "生平:   菅原中途从早稻田大学退学。他起先是一名时装模特，后于1958年被新东宝公司挖角，成为电影...",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1025558?subject_id=27231291",
+      "cover_url":
+        "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p8555.jpg",
+      "avatar": {
+        "large":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p8555.jpg",
+        "normal":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p8555.jpg"
+      },
+      "type": "celebrity",
+      "id": "1025558",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1025558/"
+    },
+    {
+      "name": "中村彰男",
+      "roles": ["配音"],
+      "title": "中村彰男（同名）日本,山口县影视演员",
+      "url": "https://movie.douban.com/celebrity/1387991/",
+      "abstract": "",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1387991?subject_id=30135481",
+      "cover_url":
+        "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1517449056.17.jpg",
+      "avatar": {
+        "large":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1517449056.17.jpg",
+        "normal":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1517449056.17.jpg"
+      },
+      "type": "celebrity",
+      "id": "1387991",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1387991/"
+    },
+    {
+      "name": "玉井夕海",
+      "roles": ["配音"],
+      "title": "玉井夕海（同名）日本,东京影视演员",
+      "url": "https://movie.douban.com/celebrity/1387988/",
+      "abstract": "",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1387988?subject_id=30135466",
+      "cover_url":
+        "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1517447378.82.jpg",
+      "avatar": {
+        "large":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1517447378.82.jpg",
+        "normal":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1517447378.82.jpg"
+      },
+      "type": "celebrity",
+      "id": "1387988",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1387988/"
+    },
+    {
+      "name": "神木隆之介",
+      "roles": ["演员", "配音"],
+      "title": "神木隆之介（同名）日本,埼玉影视演员",
+      "url": "https://movie.douban.com/celebrity/1185637/",
+      "abstract":
+        "　　神木隆之介，日本男演员、声优。出生时身患救治率仅为1%的感染症，却奇迹般地获救，并被小心翼翼地...",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1185637?subject_id=27391581",
+      "cover_url":
+        "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p13768.jpg",
+      "avatar": {
+        "large":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p13768.jpg",
+        "normal":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p13768.jpg"
+      },
+      "type": "celebrity",
+      "id": "1185637",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1185637/"
+    },
+    {
+      "name": "内藤刚志",
+      "roles": ["演员", "配音"],
+      "title": "内藤刚志（同名）日本,大阪影视演员",
+      "url": "https://movie.douban.com/celebrity/1020440/",
+      "abstract":
+        "　　内藤刚志，TAKASHI NAITO ，日本男演员。生于1955年05月27日，双子座，大阪府枚方市人。 　　毕业...",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1020440?subject_id=27226166",
+      "cover_url":
+        "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p9801.jpg",
+      "avatar": {
+        "large":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p9801.jpg",
+        "normal":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p9801.jpg"
+      },
+      "type": "celebrity",
+      "id": "1020440",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1020440/"
+    },
+    {
+      "name": "泽口靖子",
+      "roles": ["演员", "配音"],
+      "title": "泽口靖子（同名）日本,酒井影视演员",
+      "url": "https://movie.douban.com/celebrity/1019745/",
+      "abstract":
+        "泽口靖子1965年生于大阪府界市，父亲是一位普通的公司职员，母亲十分注重对孩子的教育。在这个温馨、舒...",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1019745?subject_id=27225470",
+      "cover_url":
+        "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1501472172.43.jpg",
+      "avatar": {
+        "large":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1501472172.43.jpg",
+        "normal":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1501472172.43.jpg"
+      },
+      "type": "celebrity",
+      "id": "1019745",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1019745/"
+    },
+    {
+      "name": "我修院达也",
+      "roles": ["演员", "配音"],
+      "title": "我修院达也（同名）日本,东京影视演员",
+      "url": "https://movie.douban.com/celebrity/1038066/",
+      "abstract": "",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1038066?subject_id=27243817",
+      "cover_url":
+        "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1517538263.08.jpg",
+      "avatar": {
+        "large":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1517538263.08.jpg",
+        "normal":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1517538263.08.jpg"
+      },
+      "type": "celebrity",
+      "id": "1038066",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1038066/"
+    },
+    {
+      "name": "大泉洋",
+      "roles": ["演员", "配音", "编剧", "导演"],
+      "title": "大泉洋（同名）日本,北海道,Ebetsu影视演员",
+      "url": "https://movie.douban.com/celebrity/1184188/",
+      "abstract":
+        "出生于日本北海道江别市，隶属CREATIVE OFFICE CUE事务所的演员。身高178厘米，血型为B型。2009年5月2日...",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1184188?subject_id=27390130",
+      "cover_url":
+        "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1368494074.17.jpg",
+      "avatar": {
+        "large":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1368494074.17.jpg",
+        "normal":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1368494074.17.jpg"
+      },
+      "type": "celebrity",
+      "id": "1184188",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1184188/"
+    },
+    {
+      "name": "小林郁夫",
+      "roles": ["配音"],
+      "title": "小林郁夫（同名）日本,东京影视演员",
+      "url": "https://movie.douban.com/celebrity/1387989/",
+      "abstract": "",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1387989?subject_id=30135468",
+      "cover_url":
+        "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1517447496.2.jpg",
+      "avatar": {
+        "large":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1517447496.2.jpg",
+        "normal":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1517447496.2.jpg"
+      },
+      "type": "celebrity",
+      "id": "1387989",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1387989/"
+    },
+    {
+      "name": "上条恒彦",
+      "roles": ["演员", "配音"],
+      "title": "上条恒彦（同名）日本,长野影视演员",
+      "url": "https://movie.douban.com/celebrity/1114237/",
+      "abstract": "",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1114237?subject_id=27320073",
+      "cover_url":
+        "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1499827785.17.jpg",
+      "avatar": {
+        "large":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1499827785.17.jpg",
+        "normal":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1499827785.17.jpg"
+      },
+      "type": "celebrity",
+      "id": "1114237",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1114237/"
+    },
+    {
+      "name": "小野武彦",
+      "roles": ["演员", "配音"],
+      "title": "小野武彦（同名）日本,东京影视演员",
+      "url": "https://movie.douban.com/celebrity/1025938/",
+      "abstract":
+        "为什么他跟那个叫“中尾彬”的人长得这么像，生日也只差了10天。我一直以为麻辣教师GTO里面的那个训导主...",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1025938?subject_id=27231671",
+      "cover_url":
+        "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p24249.jpg",
+      "avatar": {
+        "large":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p24249.jpg",
+        "normal":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p24249.jpg"
+      },
+      "type": "celebrity",
+      "id": "1025938",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1025938/"
+    },
+    {
+      "name": "田壮壮",
+      "roles": ["制片人", "导演", "演员", "美术", "编剧"],
+      "title": "田壮壮（同名）中国,北京影视演员",
+      "url": "https://movie.douban.com/celebrity/1274287/",
+      "abstract":
+        "中国著名男导演。北京人，是著名电影演员于蓝和田方的儿子。1968年，北京第十三中学毕业后赴吉林镇赉县...",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1274287?subject_id=27481239",
+      "cover_url":
+        "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p2417.jpg",
+      "avatar": {
+        "large":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p2417.jpg",
+        "normal":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p2417.jpg"
+      },
+      "type": "celebrity",
+      "id": "1274287",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1274287/"
+    },
+    {
+      "name": "王琳",
+      "roles": ["演员", "配音"],
+      "title": "王琳（同名）中国,上海影视演员",
+      "url": "https://movie.douban.com/celebrity/1274775/",
+      "abstract":
+        "中文名 王琳 　　出生日期 1970年8月24日 　　生肖 狗 　　血型 O型 　　星座 处女座 　　身高 166公分 ...",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1274775?subject_id=27495263",
+      "cover_url":
+        "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p6308.jpg",
+      "avatar": {
+        "large":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p6308.jpg",
+        "normal":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p6308.jpg"
+      },
+      "type": "celebrity",
+      "id": "1274775",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1274775/"
+    },
+    {
+      "name": "安田显",
+      "roles": ["演员", "配音"],
+      "title": "安田显（同名）日本,北海道,室兰市影视演员",
+      "url": "https://movie.douban.com/celebrity/1276143/",
+      "abstract":
+        "安田 顕（やすだ けん、1973年 12月8日 - ）は、日本の俳優、タレント。 愛称は「ヤスケン」。北海道 室...",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1276143?subject_id=27494115",
+      "cover_url":
+        "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1416847321.66.jpg",
+      "avatar": {
+        "large":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1416847321.66.jpg",
+        "normal":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1416847321.66.jpg"
+      },
+      "type": "celebrity",
+      "id": "1276143",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1276143/"
+    },
+    {
+      "name": "户次重幸",
+      "roles": ["演员", "配音", "导演", "编剧"],
+      "title": "户次重幸（同名）日本,北海道,札幌影视演员",
+      "url": "https://movie.douban.com/celebrity/1213396/",
+      "abstract":
+        "户次重幸，1973年出生于北海道札幌市。代表作《一公升的眼泪》、《益智游戏》、《白色荣光2》等。",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1213396?subject_id=27419365",
+      "cover_url":
+        "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p9799.jpg",
+      "avatar": {
+        "large":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p9799.jpg",
+        "normal":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p9799.jpg"
+      },
+      "type": "celebrity",
+      "id": "1213396",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1213396/"
+    },
+    {
+      "name": "黛维·切斯",
+      "roles": ["演员", "配音"],
+      "title": "黛维·切斯（同名）美国,内华达州,拉斯维加斯影视演员",
+      "url": "https://movie.douban.com/celebrity/1022643/",
+      "abstract": "",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1022643?subject_id=27228370",
+      "cover_url":
+        "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1378370214.92.jpg",
+      "avatar": {
+        "large":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1378370214.92.jpg",
+        "normal":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1378370214.92.jpg"
+      },
+      "type": "celebrity",
+      "id": "1022643",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1022643/"
+    },
+    {
+      "name": "胡立成",
+      "roles": ["配音", "演员"],
+      "title": "胡立成（同名）中国，台湾影视演员",
+      "url": "https://movie.douban.com/celebrity/1331134/",
+      "abstract": "吴孟达御用配音演员",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1331134?subject_id=27548263",
+      "cover_url":
+        "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1373518175.43.jpg",
+      "avatar": {
+        "large":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1373518175.43.jpg",
+        "normal":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1373518175.43.jpg"
+      },
+      "type": "celebrity",
+      "id": "1331134",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1331134/"
+    },
+    {
+      "name": "山像香",
+      "roles": ["配音"],
+      "title": "山像香（同名）日本,大阪府,枚方市影视演员",
+      "url": "https://movie.douban.com/celebrity/1380269/",
+      "abstract": "",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1380269?subject_id=27586053",
+      "cover_url":
+        "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1504087658.06.jpg",
+      "avatar": {
+        "large":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1504087658.06.jpg",
+        "normal":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1504087658.06.jpg"
+      },
+      "type": "celebrity",
+      "id": "1380269",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1380269/"
+    },
+    {
+      "name": "斋藤志郎",
+      "roles": ["配音", "演员"],
+      "title": "斋藤志郎（同名）日本,坂田影视演员",
+      "url": "https://movie.douban.com/celebrity/1206865/",
+      "abstract": "",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1206865?subject_id=27412828",
+      "cover_url":
+        "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1523342886.82.jpg",
+      "avatar": {
+        "large":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1523342886.82.jpg",
+        "normal":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1523342886.82.jpg"
+      },
+      "type": "celebrity",
+      "id": "1206865",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1206865/"
+    },
+    {
+      "name": "脇田茂",
+      "roles": ["配音"],
+      "title": "脇田茂（同名）影视演员",
+      "url": "https://movie.douban.com/celebrity/1387990/",
+      "abstract": "",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1387990?subject_id=30135471",
+      "cover_url":
+        "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1517447713.33.jpg",
+      "avatar": {
+        "large":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1517447713.33.jpg",
+        "normal":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1517447713.33.jpg"
+      },
+      "type": "celebrity",
+      "id": "1387990",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1387990/"
+    },
+    {
+      "name": "彭昱畅",
+      "roles": ["演员", "配音"],
+      "title": "彭昱畅（同名）中国,江西,新余影视演员",
+      "url": "https://movie.douban.com/celebrity/1354775/",
+      "abstract":
+        "彭昱畅，1994年10月25日出生于江西省新余市，现就读于上海戏剧学院12级木偶表演系。中国内地男演员。201...",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1354775?subject_id=27546840",
+      "cover_url":
+        "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1523448357.59.jpg",
+      "avatar": {
+        "large":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1523448357.59.jpg",
+        "normal":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1523448357.59.jpg"
+      },
+      "type": "celebrity",
+      "id": "1354775",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1354775/"
+    },
+    {
+      "name": "井柏然",
+      "roles": ["演员", "配音"],
+      "title": "井柏然（同名）中国,辽宁,沈阳影视演员",
+      "url": "https://movie.douban.com/celebrity/1274628/",
+      "abstract":
+        "内地青年演员。 　　1989年生于辽宁沈阳，18岁时参加“加油好男儿”，一举获得07年度全国总冠军，后签约...",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1274628?subject_id=27497524",
+      "cover_url":
+        "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1452260519.76.jpg",
+      "avatar": {
+        "large":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1452260519.76.jpg",
+        "normal":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1452260519.76.jpg"
+      },
+      "type": "celebrity",
+      "id": "1274628",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1274628/"
+    },
+    {
+      "name": "周冬雨",
+      "roles": ["演员", "配音", "主持人", "制片人"],
+      "title": "周冬雨（同名）中国,河北,石家庄影视演员",
+      "url": "https://movie.douban.com/celebrity/1274224/",
+      "abstract":
+        "周冬雨，河北省石家庄市人，毕业于北京电影学院表演系2011级本科班。2010年因出演张艺谋导演的电影《山...",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1274224?subject_id=27480648",
+      "cover_url":
+        "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1481224850.68.jpg",
+      "avatar": {
+        "large":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1481224850.68.jpg",
+        "normal":
+          "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1481224850.68.jpg"
+      },
+      "type": "celebrity",
+      "id": "1274224",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1274224/"
+    }
+  ],
+  "interest": null,
+  "episodes_count": 0,
+  "color_scheme": {
+    "is_dark": true,
+    "primary_color_light": "72625b",
+    "_base_color": [
+      0.05555555555555556,
+      0.20689655172413793,
+      0.11372549019607843
+    ],
+    "secondary_color": "f9f6f4",
+    "_avg_color": [
+      0.05555555555555556,
+      0.4347826086956521,
+      0.27058823529411763
+    ],
+    "primary_color_dark": "4c413c"
+  },
+  "type": "movie",
+  "mini_program_name": "gh_c9bfaa84f27b",
+  "null_rating_reason": "",
+  "linewatches": [],
+  "info_url": "https://www.douban.com/doubanapp//h5/movie/1291561/desc",
+  "tags": [
+    {
+      "url": "https://www.douban.com/channel/30307442",
+      "id": "30307442",
+      "name": "日本动画",
+      "is_channel": true,
+      "uri": "douban://douban.com/channel/30307442"
+    },
+    {
+      "url": "https://www.douban.com/channel/30307619",
+      "id": "30307619",
+      "name": "童年动画",
+      "is_channel": true,
+      "uri": "douban://douban.com/channel/30307619"
+    }
+  ],
+  "durations": ["125分钟"],
+  "comment_count": 200287,
+  "cover": {
+    "description": "电影《千与千寻》定档海报",
+    "author": {
+      "loc": {
+        "id": "108288",
+        "name": "北京",
+        "uid": "beijing"
+      },
+      "kind": "user",
+      "name": "穷丧烦事儿逼",
+      "url": "https://www.douban.com/people/146443262/",
+      "uri": "douban://douban.com/user/146443262",
+      "avatar": "https://img3.doubanio.com/icon/up146443262-4.jpg",
+      "type": "user",
+      "id": "146443262",
+      "uid": "146443262"
+    },
+    "url": "https://movie.douban.com/photos/photo/2557573348/",
+    "image": {
+      "large": {
+        "url": "https://img1.doubanio.com/view/photo/l/public/p2557573348.jpg",
+        "width": 1080,
+        "height": 1560,
+        "size": 0
+      },
+      "raw": null,
+      "small": {
+        "url": "https://img1.doubanio.com/view/photo/s/public/p2557573348.jpg",
+        "width": 415,
+        "height": 600,
+        "size": 0
+      },
+      "is_animated": false,
+      "normal": {
+        "url": "https://img1.doubanio.com/view/photo/m/public/p2557573348.jpg",
+        "width": 415,
+        "height": 600,
+        "size": 0
+      }
+    },
+    "uri": "douban://douban.com/photo/2557573348",
+    "create_time": "2019-05-24 10:42:47",
+    "position": 4,
+    "owner_uri": "douban://douban.com/movie/1291561",
+    "type": "photo",
+    "id": "2557573348",
+    "sharing_url":
+      "https://www.douban.com/doubanapp/dispatch?uri=/photo/2557573348/"
+  },
+  "header_bg_color": "4c413c",
+  "is_douban_intro": true,
+  "honor_infos": [
+    {
+      "kind": "rank",
+      "uri": "douban://douban.com/subject_collection/movie_weekly_best",
+      "rank": 3,
+      "title": "一周口碑电影榜"
+    }
+  ],
+  "sharing_url": "https://www.douban.com/doubanapp/dispatch/movie/1291561",
+  "wechat_timeline_share": "screenshot",
+  "countries": ["日本"],
+  "url": "https://movie.douban.com/subject/1291561/",
+  "release_date": null,
+  "original_title": "千と千尋の神隠し",
+  "uri": "douban://douban.com/movie/1291561",
+  "pre_playable_date": null,
+  "mini_program_page": "pages/subject/subject?type=movie&id=1291561",
+  "subtype": "movie",
+  "directors": [
+    {
+      "name": "宫崎骏",
+      "roles": ["编剧", "导演", "制片人", "动画", "演员"],
+      "title": "宫崎骏（同名）日本,东京影视演员",
+      "url": "https://movie.douban.com/celebrity/1054439/",
+      "abstract":
+        "1922年，法国影评家埃利·福尔满含感情的预言：“终有一天动画片会具有纵深感，造型高超，色彩有层次…...",
+      "author": null,
+      "uri": "douban://douban.com/celebrity/1054439?subject_id=27260207",
+      "cover_url":
+        "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p616.jpg",
+      "avatar": {
+        "large":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p616.jpg",
+        "normal":
+          "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p616.jpg"
+      },
+      "type": "celebrity",
+      "id": "1054439",
+      "sharing_url":
+        "https://www.douban.com/doubanapp/dispatch?uri=/celebrity/1054439/"
+    }
+  ],
+  "is_show": false,
+  "in_blacklist": false,
+  "pre_release_desc": "",
+  "video": null,
+  "aka": [
+    "神隐少女(台)",
+    "千与千寻的神隐",
+    "Spirited Away",
+    "A Voyage of Chihiro",
+    "Sen to Chihiro no kamikakushi"
+  ],
+  "webisode_count": 0,
+  "trailer": {
+    "sharing_url":
+      "https://www.douban.com/doubanapp/dispatch?uri=/movie/1291561/trailer%3Ftrailer_id%3D248761%26trailer_type%3DA",
+    "video_url":
+      "http://vt1.doubanio.com/201906302034/1ef4a41d00297543231e8632b53c48c8/view/movie/M/402480761.mp4",
+    "title": "中国预告片：中文致敬版 (中文字幕)",
+    "uri": "https://m.douban.com/movie/trailer/248761",
+    "cover_url":
+      "https://img1.doubanio.com/img/trailer/medium/2560057908.jpg?1560945917",
+    "term_num": 0,
+    "n_comments": 246,
+    "create_time": "2019-06-19",
+    "subject_title": "千与千寻",
+    "file_size": 23635666,
+    "runtime": "01:51",
+    "type": "A",
+    "id": "248761",
+    "desc": ""
+  }
+}

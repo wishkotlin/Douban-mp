@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "top": "/static/top/index"
+  },
+
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "榜单",
+  "navigationBarTextStyle": "black",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": true
+}

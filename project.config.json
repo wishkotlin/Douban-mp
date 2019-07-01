@@ -9,6 +9,7 @@
 		"newFeature": true,
 		"coverView": true,
 		"autoAudits": false,
+		"uglifyFileName": true,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
@@ -16,8 +17,7 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		},
-		"uglifyFileName": true
+		}
 	},
 	"miniprogramRoot": "dist/wx/",
 	"compileType": "miniprogram",
@@ -44,7 +44,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -75,10 +75,31 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 4,
 					"name": "详情",
 					"pathName": "pages/details/main",
 					"query": "id= 1291561&name=千与千寻",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "榜单详情",
+					"pathName": "pages/list_detail/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "annual",
+					"pathName": "pages/annual/list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "详情",
+					"pathName": "pages/details/main",
+					"query": "id= 30269908&name=圆桌派",
 					"scene": null
 				}
 			]
