@@ -1,0 +1,587 @@
+{
+  "count": 20,
+  "start": 0,
+  "total": 3,
+  "selected_collections": [
+    {
+      "description": "每周一更新 · 共10部",
+      "header_fg_image": "https://img3.doubanio.com/img/roboport/files/file-book_fiction_hot_weekly-big_cover.png?ts=1561946187.21",
+      "url": "https://m.douban.com/app_topic/book_fiction_hot_weekly",
+      "items": [
+        {
+          "rating": {
+            "count": 5354,
+            "max": 10,
+            "star_count": 4,
+            "value": 8.2
+          },
+          "pic": {
+            "large": "https://img3.doubanio.com/view/subject/l/public/s32266692.jpg",
+            "normal": "https://img3.doubanio.com/view/subject/l/public/s32266692.jpg"
+          },
+          "sharing_url": "https://www.douban.com/doubanapp/dispatch/book/30475767",
+          "pubdate": ["2019-4-16"],
+          "author": ["麦家"],
+          "url": "https://book.douban.com/subject/30475767/",
+          "trend_equal": true,
+          "null_rating_reason": "",
+          "uri": "douban://douban.com/book/30475767",
+          "trend_up": false,
+          "press": ["北京十月文艺出版社"],
+          "is_show": false,
+          "is_released": true,
+          "color_scheme": {
+            "is_dark": true,
+            "primary_color_light": "726454",
+            "_base_color": [
+              0.08490566037735847,
+              0.26108374384236444,
+              0.796078431372549
+            ],
+            "secondary_color": "f9f7f4",
+            "_avg_color": [
+              0.08333333333333333,
+              0.2608695652173913,
+              0.1803921568627451
+            ],
+            "primary_color_dark": "4c4238"
+          },
+          "subtype": "book",
+          "card_subtitle": "麦家 / 2019 / 北京十月文艺出版社",
+          "title": "人生海海",
+          "type": "book",
+          "id": "30475767",
+          "has_ebook": false,
+          "trend_down": false
+        },
+        {
+          "rating": {
+            "count": 944,
+            "max": 10,
+            "star_count": 4.5,
+            "value": 8.9
+          },
+          "pic": {
+            "large": "https://img3.doubanio.com/view/subject/l/public/s29972205.jpg",
+            "normal": "https://img3.doubanio.com/view/subject/l/public/s29972205.jpg"
+          },
+          "sharing_url": "https://www.douban.com/doubanapp/dispatch/book/30207738",
+          "pubdate": ["2019-5"],
+          "author": ["[法] 马克-安托万·马修"],
+          "url": "https://book.douban.com/subject/30207738/",
+          "trend_equal": true,
+          "null_rating_reason": "",
+          "uri": "douban://douban.com/book/30207738",
+          "trend_up": false,
+          "press": ["后浪丨湖南美术出版社"],
+          "is_show": false,
+          "is_released": true,
+          "color_scheme": {
+            "is_dark": true,
+            "primary_color_light": "727272",
+            "_base_color": [0, 0, 0.01568627450980392],
+            "secondary_color": "f9f4f4",
+            "_avg_color": [0, 0, 0.08235294117647059],
+            "primary_color_dark": "4c4c4c"
+          },
+          "subtype": "book",
+          "card_subtitle": "[法] 马克-安托万·马修 / 2019 / 后浪丨湖南美术出版社",
+          "title": "3秒",
+          "type": "book",
+          "id": "30207738",
+          "has_ebook": false,
+          "trend_down": false
+        },
+        {
+          "rating": {
+            "count": 192,
+            "max": 10,
+            "star_count": 4.5,
+            "value": 9.1
+          },
+          "pic": {
+            "large": "https://img3.doubanio.com/view/subject/l/public/s29840640.jpg",
+            "normal": "https://img3.doubanio.com/view/subject/l/public/s29840640.jpg"
+          },
+          "sharing_url": "https://www.douban.com/doubanapp/dispatch/book/30282302",
+          "pubdate": ["2019-4"],
+          "author": ["[美] 库尔特·冯内古特"],
+          "url": "https://book.douban.com/subject/30282302/",
+          "trend_equal": true,
+          "null_rating_reason": "",
+          "uri": "douban://douban.com/book/30282302",
+          "trend_up": false,
+          "press": ["中信出版集团/楚尘文化"],
+          "is_show": false,
+          "is_released": true,
+          "color_scheme": {
+            "is_dark": true,
+            "primary_color_light": "a57265",
+            "_base_color": [
+              0.033333333333333326,
+              0.3846153846153847,
+              0.15294117647058825
+            ],
+            "secondary_color": "f9f5f4",
+            "_avg_color": [
+              0.9785478547854786,
+              0.6273291925465838,
+              0.6313725490196078
+            ],
+            "primary_color_dark": "7f584e"
+          },
+          "subtype": "book",
+          "card_subtitle": "[美] 库尔特·冯内古特 / 2019 / 中信出版集团/楚尘文化",
+          "title": "2081",
+          "type": "book",
+          "id": "30282302",
+          "has_ebook": false,
+          "trend_down": false
+        },
+        {
+          "rating": {
+            "count": 440,
+            "max": 10,
+            "star_count": 4.5,
+            "value": 9.1
+          },
+          "pic": {
+            "large": "https://img1.doubanio.com/view/subject/l/public/s29993079.jpg",
+            "normal": "https://img1.doubanio.com/view/subject/l/public/s29993079.jpg"
+          },
+          "sharing_url": "https://www.douban.com/doubanapp/dispatch/book/30420900",
+          "pubdate": ["2019-3-25"],
+          "author": ["[美] 伊丽莎白·斯特劳特"],
+          "url": "https://book.douban.com/subject/30420900/",
+          "trend_equal": true,
+          "null_rating_reason": "",
+          "uri": "douban://douban.com/book/30420900",
+          "trend_up": false,
+          "press": ["南海出版公司"],
+          "is_show": false,
+          "is_released": true,
+          "color_scheme": {
+            "is_dark": true,
+            "primary_color_light": "0761a5",
+            "_base_color": [
+              0.5717299578059073,
+              0.9575757575757575,
+              0.6470588235294118
+            ],
+            "secondary_color": "f4f7f9",
+            "_avg_color": [
+              0.5706401766004415,
+              0.8531073446327684,
+              0.6941176470588235
+            ],
+            "primary_color_dark": "054a7f"
+          },
+          "subtype": "book",
+          "card_subtitle": "[美] 伊丽莎白·斯特劳特 / 2019 / 南海出版公司",
+          "title": "奥丽芙·基特里奇",
+          "type": "book",
+          "id": "30420900",
+          "has_ebook": false,
+          "trend_down": false
+        }
+      ],
+      "uri": "douban://douban.com/subject_collection/book_fiction_hot_weekly?type=rank",
+      "cover_url": "https://img3.doubanio.com/img/roboport/files/file-book_fiction_hot_weekly-square_cover.png?ts=1561946187.21",
+      "updated_at": "2019-06-24 19:29:03",
+      "header_bg_image": "https://img3.doubanio.com/view/subject/l/public/s32266692.jpg",
+      "covers": [],
+      "total": 10,
+      "name": "虚构类热门榜",
+      "id": "book_fiction_hot_weekly",
+      "background_color_scheme": {
+        "is_dark": true,
+        "primary_color_light": "726454",
+        "secondary_color": "f9f7f4",
+        "primary_color_dark": "4c4238"
+      }
+    },
+    {
+      "description": "每周一更新 · 共10部",
+      "header_fg_image": "https://img3.doubanio.com/img/roboport/files/file-book_nonfiction_hot_weekly-big_cover.png?ts=1561946187.22",
+      "url": "https://m.douban.com/app_topic/book_nonfiction_hot_weekly",
+      "items": [
+        {
+          "rating": {
+            "count": 2753,
+            "max": 10,
+            "star_count": 4,
+            "value": 8.4
+          },
+          "pic": {
+            "large": "https://img3.doubanio.com/view/subject/l/public/s32305312.jpg",
+            "normal": "https://img3.doubanio.com/view/subject/l/public/s32305312.jpg"
+          },
+          "sharing_url": "https://www.douban.com/doubanapp/dispatch/book/33379779",
+          "pubdate": ["2019-5"],
+          "author": ["[法] 弗雷德里克·皮耶鲁齐", "[法] 马修·阿伦"],
+          "url": "https://book.douban.com/subject/33379779/",
+          "trend_equal": true,
+          "null_rating_reason": "",
+          "uri": "douban://douban.com/book/33379779",
+          "trend_up": false,
+          "press": ["中信出版社"],
+          "is_show": false,
+          "is_released": true,
+          "color_scheme": {
+            "is_dark": true,
+            "primary_color_light": "727072",
+            "_base_color": [
+              0.8333333333333334,
+              0.017857142857142794,
+              0.2196078431372549
+            ],
+            "secondary_color": "f9f4f9",
+            "_avg_color": [0, 0.021505376344085947, 0.36470588235294116],
+            "primary_color_dark": "4c4b4c"
+          },
+          "subtype": "book",
+          "card_subtitle": "[法] 弗雷德里克·皮耶鲁齐 [法] 马修·阿伦 / 2019 / 中信出版社",
+          "title": "美国陷阱",
+          "type": "book",
+          "id": "33379779",
+          "has_ebook": false,
+          "trend_down": false
+        },
+        {
+          "rating": {
+            "count": 1824,
+            "max": 10,
+            "star_count": 4.5,
+            "value": 8.9
+          },
+          "pic": {
+            "large": "https://img3.doubanio.com/view/subject/l/public/s30025945.jpg",
+            "normal": "https://img3.doubanio.com/view/subject/l/public/s30025945.jpg"
+          },
+          "sharing_url": "https://www.douban.com/doubanapp/dispatch/book/30484795",
+          "pubdate": ["2019-4"],
+          "author": ["[日]伊藤诗织"],
+          "url": "https://book.douban.com/subject/30484795/",
+          "trend_equal": true,
+          "null_rating_reason": "",
+          "uri": "douban://douban.com/book/30484795",
+          "trend_up": false,
+          "press": ["中信出版集团"],
+          "is_show": false,
+          "is_released": true,
+          "color_scheme": {
+            "is_dark": true,
+            "primary_color_light": "726a66",
+            "_base_color": [
+              0.04999999999999986,
+              0.10810810810810803,
+              0.7254901960784313
+            ],
+            "secondary_color": "f9f6f4",
+            "_avg_color": [
+              0.05555555555555556,
+              0.12631578947368421,
+              0.37254901960784315
+            ],
+            "primary_color_dark": "4c4644"
+          },
+          "subtype": "book",
+          "card_subtitle": "[日]伊藤诗织 / 2019 / 中信出版集团",
+          "title": "黑箱",
+          "type": "book",
+          "id": "30484795",
+          "has_ebook": false,
+          "trend_down": false
+        },
+        {
+          "rating": {
+            "count": 1584,
+            "max": 10,
+            "star_count": 4,
+            "value": 8.3
+          },
+          "pic": {
+            "large": "https://img3.doubanio.com/view/subject/l/public/s32288675.jpg",
+            "normal": "https://img3.doubanio.com/view/subject/l/public/s32288675.jpg"
+          },
+          "sharing_url": "https://www.douban.com/doubanapp/dispatch/book/30473907",
+          "pubdate": ["2019-4"],
+          "author": ["[美]约翰·卡雷鲁（John Carreyrou）"],
+          "url": "https://book.douban.com/subject/30473907/",
+          "trend_equal": true,
+          "null_rating_reason": "",
+          "uri": "douban://douban.com/book/30473907",
+          "trend_up": false,
+          "press": ["雅众文化/北京联合出版公司"],
+          "is_show": false,
+          "is_released": true,
+          "color_scheme": {
+            "is_dark": true,
+            "primary_color_light": "726867",
+            "_base_color": [
+              0.015151515151515119,
+              0.10091743119266046,
+              0.8549019607843137
+            ],
+            "secondary_color": "f9f5f4",
+            "_avg_color": [0, 0.08219178082191772, 0.28627450980392155],
+            "primary_color_dark": "4c4544"
+          },
+          "subtype": "book",
+          "card_subtitle": "[美]约翰·卡雷鲁（John Carreyrou） / 2019 / 雅众文化/北京联合出版公司",
+          "title": "坏血",
+          "type": "book",
+          "id": "30473907",
+          "has_ebook": false,
+          "trend_down": false
+        },
+        {
+          "rating": {
+            "count": 402,
+            "max": 10,
+            "star_count": 4.5,
+            "value": 8.9
+          },
+          "pic": {
+            "large": "https://img1.doubanio.com/view/subject/l/public/s32271479.jpg",
+            "normal": "https://img1.doubanio.com/view/subject/l/public/s32271479.jpg"
+          },
+          "sharing_url": "https://www.douban.com/doubanapp/dispatch/book/30411849",
+          "pubdate": ["2019-4"],
+          "author": ["[美]斯文·贝克特"],
+          "url": "https://book.douban.com/subject/30411849/",
+          "trend_equal": true,
+          "null_rating_reason": "",
+          "uri": "douban://douban.com/book/30411849",
+          "trend_up": false,
+          "press": ["后浪丨民主与建设出版社"],
+          "is_show": false,
+          "is_released": true,
+          "color_scheme": {
+            "is_dark": true,
+            "primary_color_light": "a53122",
+            "_base_color": [
+              0.019144144144144132,
+              0.7914438502673796,
+              0.7333333333333333
+            ],
+            "secondary_color": "f9f5f4",
+            "_avg_color": [
+              0.025287356321839094,
+              0.7474226804123711,
+              0.7607843137254902
+            ],
+            "primary_color_dark": "7f261a"
+          },
+          "subtype": "book",
+          "card_subtitle": "[美]斯文·贝克特 / 2019 / 后浪丨民主与建设出版社",
+          "title": "棉花帝国",
+          "type": "book",
+          "id": "30411849",
+          "has_ebook": false,
+          "trend_down": false
+        }
+      ],
+      "uri": "douban://douban.com/subject_collection/book_nonfiction_hot_weekly?type=rank",
+      "cover_url": "https://img3.doubanio.com/img/roboport/files/file-book_nonfiction_hot_weekly-square_cover.png?ts=1561946187.22",
+      "updated_at": "2019-06-24 19:29:04",
+      "header_bg_image": "https://img3.doubanio.com/view/subject/l/public/s32305312.jpg",
+      "covers": [],
+      "total": 10,
+      "name": "非虚构类热门榜",
+      "id": "book_nonfiction_hot_weekly",
+      "background_color_scheme": {
+        "is_dark": true,
+        "primary_color_light": "727072",
+        "secondary_color": "f9f4f9",
+        "primary_color_dark": "4c4b4c"
+      }
+    },
+    {
+      "description": "豆瓣榜单 · 共250部",
+      "header_fg_image": "https://img3.doubanio.com/img/roboport/files/file-book_top250-big_cover.png?ts=1561946186.28",
+      "url": "https://m.douban.com/app_topic/book_top250",
+      "items": [
+        {
+          "rating": {
+            "count": 462931,
+            "max": 10,
+            "star_count": 4.5,
+            "value": 8.9
+          },
+          "color_scheme": {
+            "is_dark": true,
+            "primary_color_light": "a5543f",
+            "_base_color": [
+              0.0328282828282828,
+              0.613953488372093,
+              0.8431372549019608
+            ],
+            "secondary_color": "f9f5f4",
+            "_avg_color": [
+              0.01890034364261169,
+              0.5271739130434783,
+              0.7215686274509804
+            ],
+            "primary_color_dark": "7f4031"
+          },
+          "sharing_url": "https://www.douban.com/doubanapp/dispatch/book/1770782",
+          "pubdate": ["2006-5"],
+          "author": ["[美] 卡勒德·胡赛尼"],
+          "url": "https://book.douban.com/subject/1770782/",
+          "pic": {
+            "large": "https://img3.doubanio.com/view/subject/l/public/s1727290.jpg",
+            "normal": "https://img3.doubanio.com/view/subject/l/public/s1727290.jpg"
+          },
+          "null_rating_reason": "",
+          "uri": "douban://douban.com/book/1770782",
+          "press": ["上海人民出版社"],
+          "is_show": false,
+          "is_released": true,
+          "subtype": "book",
+          "card_subtitle": "[美] 卡勒德·胡赛尼 / 2006 / 上海人民出版社",
+          "title": "追风筝的人",
+          "type": "book",
+          "id": "1770782",
+          "has_ebook": false
+        },
+        {
+          "rating": {
+            "count": 451886,
+            "max": 10,
+            "star_count": 4.5,
+            "value": 8.5
+          },
+          "color_scheme": {
+            "is_dark": true,
+            "primary_color_light": "3c6672",
+            "_base_color": [
+              0.5374149659863946,
+              0.47572815533980584,
+              0.403921568627451
+            ],
+            "secondary_color": "f4f8f9",
+            "_avg_color": [
+              0.4215686274509804,
+              0.18681318681318676,
+              0.3568627450980392
+            ],
+            "primary_color_dark": "28444c"
+          },
+          "sharing_url": "https://www.douban.com/doubanapp/dispatch/book/25862578",
+          "pubdate": ["2014-5"],
+          "author": ["[日] 东野圭吾"],
+          "url": "https://book.douban.com/subject/25862578/",
+          "pic": {
+            "large": "https://img3.doubanio.com/view/subject/l/public/s27264181.jpg",
+            "normal": "https://img3.doubanio.com/view/subject/l/public/s27264181.jpg"
+          },
+          "null_rating_reason": "",
+          "uri": "douban://douban.com/book/25862578",
+          "press": ["南海出版公司"],
+          "is_show": false,
+          "is_released": true,
+          "subtype": "book",
+          "card_subtitle": "[日] 东野圭吾 / 2014 / 南海出版公司",
+          "title": "解忧杂货店",
+          "type": "book",
+          "id": "25862578",
+          "has_ebook": false
+        },
+        {
+          "rating": {
+            "count": 385310,
+            "max": 10,
+            "star_count": 4.5,
+            "value": 9
+          },
+          "color_scheme": {
+            "is_dark": true,
+            "primary_color_light": "2b3772",
+            "_base_color": [
+              0.6395833333333334,
+              0.6201550387596899,
+              0.5058823529411764
+            ],
+            "secondary_color": "f4f5f9",
+            "_avg_color": [
+              0.6341463414634146,
+              0.32539682539682546,
+              0.49411764705882355
+            ],
+            "primary_color_dark": "1d244c"
+          },
+          "sharing_url": "https://www.douban.com/doubanapp/dispatch/book/1084336",
+          "pubdate": ["2003-8"],
+          "author": ["[法] 圣埃克苏佩里"],
+          "url": "https://book.douban.com/subject/1084336/",
+          "pic": {
+            "large": "https://img3.doubanio.com/view/subject/l/public/s1103152.jpg",
+            "normal": "https://img3.doubanio.com/view/subject/l/public/s1103152.jpg"
+          },
+          "null_rating_reason": "",
+          "uri": "douban://douban.com/book/1084336",
+          "press": ["人民文学出版社"],
+          "is_show": false,
+          "is_released": true,
+          "subtype": "book",
+          "card_subtitle": "[法] 圣埃克苏佩里 / 2003 / 人民文学出版社",
+          "title": "小王子",
+          "type": "book",
+          "id": "1084336",
+          "has_ebook": false
+        },
+        {
+          "rating": {
+            "count": 334484,
+            "max": 10,
+            "star_count": 4.5,
+            "value": 9.1
+          },
+          "color_scheme": {
+            "is_dark": true,
+            "primary_color_light": "a5a5a5",
+            "_base_color": [0, 0, 0.20392156862745098],
+            "secondary_color": "f9f4f4",
+            "_avg_color": [0, 0, 0.6431372549019608],
+            "primary_color_dark": "7f7f7f"
+          },
+          "sharing_url": "https://www.douban.com/doubanapp/dispatch/book/3259440",
+          "pubdate": ["2008-9"],
+          "author": ["[日] 东野圭吾"],
+          "url": "https://book.douban.com/subject/3259440/",
+          "pic": {
+            "large": "https://img3.doubanio.com/view/subject/l/public/s4610502.jpg",
+            "normal": "https://img3.doubanio.com/view/subject/l/public/s4610502.jpg"
+          },
+          "null_rating_reason": "",
+          "uri": "douban://douban.com/book/3259440",
+          "press": ["南海出版公司"],
+          "is_show": false,
+          "is_released": true,
+          "subtype": "book",
+          "card_subtitle": "[日] 东野圭吾 / 2008 / 南海出版公司",
+          "title": "白夜行",
+          "type": "book",
+          "id": "3259440",
+          "has_ebook": false
+        }
+      ],
+      "uri": "douban://douban.com/subject_collection/book_top250?type=rank",
+      "cover_url": "https://img3.doubanio.com/img/roboport/files/file-book_top250-square_cover.png?ts=1561946186.28",
+      "updated_at": null,
+      "header_bg_image": "https://img3.doubanio.com/view/subject/l/public/s1727290.jpg",
+      "covers": [],
+      "total": 250,
+      "name": "豆瓣读书 Top250",
+      "id": "book_top250",
+      "background_color_scheme": {
+        "is_dark": true,
+        "primary_color_light": "544F48",
+        "secondary_color": "544F48",
+        "primary_color_dark": "544F48"
+      }
+    }
+  ],
+  "title": "豆瓣榜单"
+}

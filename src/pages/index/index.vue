@@ -309,27 +309,39 @@ export default {
     let Fly = require("../../../static/fly/wx.umd.min.js"); //wx.js为您下载的源码文件
     let fly = new Fly();
     function movie_showing() {
-      return fly.get("http://192.168.43.122:8081/moock/movie_showing.json");
+      return fly.get(
+        "https://frodo.douban.com/api/v2/subject_collection/movie_showing/items?start=0&count=10&apiKey=054022eaeae0b00e0fc068c0c0a2102a"
+      );
     }
 
     function movie_hot_gaia() {
-      return fly.get("http://192.168.43.122:8081/moock/movie_hot_gaia.json");
+      return fly.get(
+        "https://frodo.douban.com/api/v2/subject_collection/movie_hot_gaia/items?start=0&count=10&apiKey=054022eaeae0b00e0fc068c0c0a2102a"
+      );
     }
 
     function tv_hot() {
-      return fly.get("http://192.168.43.122:8081/moock/tv_hot.json");
+      return fly.get(
+        "https://frodo.douban.com/api/v2/subject_collection/tv_hot/items?start=0&count=10&apiKey=054022eaeae0b00e0fc068c0c0a2102a"
+      );
     }
 
     function tv_variety_show() {
-      return fly.get("http://192.168.43.122:8081/moock/tv_variety_show.json");
+      return fly.get(
+        "https://frodo.douban.com/api/v2/subject_collection/tv_variety_show/items?start=0&count=10&apiKey=054022eaeae0b00e0fc068c0c0a2102a"
+      );
     }
 
     function book_bestseller() {
-      return fly.get("http://192.168.43.122:8081/moock/book_bestseller.json");
+      return fly.get(
+        "https://frodo.douban.com/api/v2/subject_collection/book_bestseller/items?start=0&count=10&apiKey=054022eaeae0b00e0fc068c0c0a2102a"
+      );
     }
 
     function music_single() {
-      return fly.get("http://192.168.43.122:8081/moock/music_single.json");
+      return fly.get(
+        "https://frodo.douban.com/api/v2/subject_collection/music_single/items?start=0&count=10&apiKey=054022eaeae0b00e0fc068c0c0a2102a"
+      );
     }
 
     await fly

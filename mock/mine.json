@@ -1,0 +1,25 @@
+{
+  "info": [
+    {
+      "titleone": "观影分析",
+      "titletwo": "2",
+      "contentone": "标记10部影片",
+      "contenttwo": "开启观影分析",
+      "img": "https://ws1.sinaimg.cn/large/8660d1bbly1g4gjoo0bvpj205k05kq2q.jpg"
+    },
+    {
+      "titleone": "读书分析",
+      "titletwo": "3",
+      "contentone": "标记10本书",
+      "contenttwo": "开启读书分析",
+      "img": "https://ws1.sinaimg.cn/large/8660d1bbly1g4gjolpe9fj205k05kq2s.jpg"
+    },
+    {
+      "titleone": "音乐分析",
+      "titletwo": "6",
+      "contentone": "标记10张唱片",
+      "contenttwo": "开启音乐分析",
+      "img": "https://ws1.sinaimg.cn/large/8660d1bbly1g4gjoqfianj205k05k745.jpg"
+    }
+  ]
+}
