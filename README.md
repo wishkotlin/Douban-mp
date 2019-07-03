@@ -2,6 +2,16 @@
 
 > A Mpvue project
 
+## 首页
+
+![](https://ws1.sinaimg.cn/large/8660d1bbly1g4mhm6fr6jg20ab0ih7mn.gif)
+
+## 搜索页
+![](https://ws1.sinaimg.cn/large/8660d1bbly1g4mhmb2y4jg20ab0ih0v9.gif)
+
+## 搜索详情页
+
+![](https://ws1.sinaimg.cn/large/8660d1bbly1g4mhmeho8fg20ab0ihn4t.gif)
 ## Build Setup
 
 ``` bash

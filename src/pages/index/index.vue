@@ -44,45 +44,44 @@
         </scroll-view>
       </div>
     </div>
-
-    <div class="hot" :key="index" v-for="(item,index) in in_theaters">
-      <!-- 影院热映 -->
-      <div class="Cinema">
-        <text>{{item.subject_collection && item.subject_collection.name}}</text>
-        <a
-          class="more"
-          :href="'/pages/more/main?title=' + item.subject_collection.name + '&key=' + item.subject_collection.id"
-          hover-class="none"
-        >
-          <text>查看更多 ></text>
-        </a>
-      </div>
-      <scroll-view scroll-x="true">
-        <div class="uploadWrap" :scroll-x="true">
+    <div v-if="!loade">
+      <div class="hot" :key="index" v-for="(item,index) in in_theaters">
+        <div class="Cinema">
+          <text>{{item.subject_collection && item.subject_collection.name}}</text>
           <a
-            :href="'/pages/details/main?id='+i.id+'&name='+i.title"
-            class="upload_Item"
-            :key="key + 1"
-            v-for="(i,key) in  item.subject_collection_items"
+            class="more"
+            :href="'/pages/more/main?title=' + item.subject_collection.name + '&key=' + item.subject_collection.id"
+            hover-class="none"
           >
-            <!-- navigator：页面跳转链接 -->
-            <img class="upload_Item_img" :src="i.cover.url" />
-            <text>{{i.title}}</text>
-            <div class="number-rate-out" :class="{'no-star': !i.rating}">
-              <d-rate
-                :rating="i.rating && i.rating.value"
-                :max="i.rating && i.rating.max"
-                v-bind:list="[1,2,3,4,5]"
-                v-if="i.rating"
-              ></d-rate>
-              <div class="munber-rate">
-                <ratevalue :i="i"></ratevalue>
-              </div>
-              <div class="munber-rate" :class="{'no-star-rate': !i.rating}" v-if="!i.rating">暂无评分</div>
-            </div>
+            <text>查看更多 ></text>
           </a>
         </div>
-      </scroll-view>
+        <scroll-view scroll-x="true">
+          <div class="uploadWrap" :scroll-x="true">
+            <a
+              :href="'/pages/details/main?id='+i.id+'&name='+i.title"
+              class="upload_Item"
+              :key="key + 1"
+              v-for="(i,key) in  item.subject_collection_items"
+            >
+              <img class="upload_Item_img" :src="i.cover.url" />
+              <text>{{i.title}}</text>
+              <div class="number-rate-out" :class="{'no-star': !i.rating}">
+                <d-rate
+                  :rating="i.rating && i.rating.value"
+                  :max="i.rating && i.rating.max"
+                  v-bind:list="[1,2,3,4,5]"
+                  v-if="i.rating"
+                ></d-rate>
+                <div class="munber-rate">
+                  <ratevalue :i="i"></ratevalue>
+                </div>
+                <div class="munber-rate" :class="{'no-star-rate': !i.rating}" v-if="!i.rating">暂无评分</div>
+              </div>
+            </a>
+          </div>
+        </scroll-view>
+      </div>
     </div>
 
     <!-- <div>

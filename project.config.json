@@ -25,7 +25,7 @@
 	"projectname": "douban-minipro",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
-	"libVersion": "2.7.2",
+	"libVersion": "2.7.3",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -44,7 +44,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 7,
+			"current": 10,
 			"list": [
 				{
 					"id": -1,
@@ -100,6 +100,26 @@
 					"name": "详情",
 					"pathName": "pages/details/main",
 					"query": "id= 26931786&name=蜘蛛俠",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "pages/short_commit_datail/main",
+					"pathName": "pages/short_commit_datail/main",
+					"query": "id= 26931786&name=蜘蛛俠&rating=8&max=10",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/short_commit_datail/main",
+					"pathName": "pages/watch/main",
+					"query": "watch=false&title=想看",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "search",
+					"pathName": "pages/search/main",
 					"scene": null
 				}
 			]

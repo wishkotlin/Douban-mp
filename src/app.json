@@ -10,7 +10,11 @@
     "pages/details/main",
     "pages/list_detail/main",
     "pages/webview/main",
-    "pages/annual/main"
+    "pages/annual/main",
+    "pages/short_commit_datail/main",
+    "pages/login_weixin/main",
+    "pages/login_douban/main",
+    "pages/watch/main"
   ],
   "window": {
     "backgroundTextStyle": "light",

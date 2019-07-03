@@ -44,7 +44,7 @@ export default {
     }
   },
   mounted() {
-    console.log("rate");
+    // console.log("rate");
   }
 };
 </script>

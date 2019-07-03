@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "top": "/static/top/index",
+    "vant-rate": "/static/dist/rate/index"
+  },
+
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "想看",
+  "navigationBarTextStyle": "black",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": true
+}

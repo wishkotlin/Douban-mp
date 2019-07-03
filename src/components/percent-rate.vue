@@ -1,5 +1,5 @@
 <template>
-  <div class="munber-rate" v-if="i.rating">{{i.rating && rate}}</div>
+  <div class="munber-rate" v-if="i">{{rate && rate}}%</div>
 </template>
 <script>
 export default {
@@ -14,8 +14,9 @@ export default {
   },
   computed: {
     rate() {
-      if (this.$props.i.rating) {
-        return Math.round(this.$props.i.rating.value * 10) / 10;
+      if (this.$props.i) {
+        let temp = this.$props.i * 100;
+        return Math.round(temp * 10) / 10;
       }
     }
   }
@@ -25,7 +26,9 @@ export default {
 <style lang="scss" scoped>
 .munber-rate {
   display: inline-block;
-  font-size: 21rpx;
+  font-size: 18rpx;
   padding-left: 10rpx;
+  height: 22rpx;
+  color: rgb(97, 97, 97);
 }
 </style>

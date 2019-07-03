@@ -1,5 +1,5 @@
 <template>
-  <div class="main" v-if="flag">
+  <div class="main" v-show="flag">
     <top :title="title" :show_bol="false" :my_class="false"></top>
     <div class="head">
       <div class="head-left">
@@ -12,21 +12,24 @@
         <div class="genres">
           <span v-for="(item,index) in list.genres" :key="index">{{item}}</span>
           /
-          <span>{{list.countries[0] && list.countries[0]}}</span>
+          <span>{{list.countries && list.countries[0]}}</span>
           /
-          <span>{{list.durations[0] && list.durations[0]}}</span>
+          <span>{{list.durations && list.durations[0]}}</span>
         </div>
         <div class="watch">
-          <span>
+          <a href="/pages/watch/main?watch=false&title=想看">
             <i class="iconfont icon-xiangkan"></i> 想看
-          </span>
-          <span>
+          </a>
+          <a href="/pages/watch/main?watch=true&title=看过">
             <i class="iconfont icon-star1"></i> 看过
-          </span>
+          </a>
         </div>
       </div>
     </div>
-    <div class="rate">
+    <a
+      :href="'/pages/short_commit_datail/main?id='+id+'&name='+title+'&rating='+ (list.rating && list.rating.value) +'&max=10'"
+      class="rate"
+    >
       <div class="rate-title">
         <span>
           豆瓣评分
@@ -117,7 +120,7 @@
           </span>
         </span>
       </div>
-    </div>
+    </a>
     <div class="intro" v-if="list.intro">
       <div class="intro-title">简介</div>
       <div class="intro-content" :class="{more: !more}">{{list && list.intro}}</div>
@@ -198,18 +201,51 @@
           </div>
         </span>
       </div>
-      <div class="more">
-        <span>查看全部短评</span>
+      <a
+        :href="'/pages/short_commit_datail/main?id='+id+'&name='+title+'&rating='+ (list.rating && list.rating.value) +'&max=10'"
+        class="more"
+      >
+        <div>查看全部短评</div>
         <i class="iconfont icon-jiantou"></i>
-      </div>
+      </a>
     </div>
+    <div class="hot">
+      <scroll-view scroll-x="true">
+        <div class="uploadWrap" :scroll-x="true">
+          <a
+            :href="'/pages/details/main?id='+i.id+'&name='+i.title"
+            class="upload_Item"
+            :key="key + 1"
+            v-for="(i,key) in recommendations"
+          >
+            <img class="upload_Item_img" :src="i.pic.normal" />
+            <text>{{i.title}}</text>
+            <div class="number-rate-out" :class="{'no-star': !i.rating}">
+              <rate
+                :rating="i.rating && i.rating.value"
+                :max="i.rating && i.rating.max"
+                v-bind:list="[1,2,3,4,5]"
+                v-if="i.rating"
+              ></rate>
+              <div class="munber-rate">
+                <ratevalue :i="i"></ratevalue>
+              </div>
+              <div class="munber-rate" :class="{'no-star-rate': !i.rating}" v-if="!i.rating">暂无评分</div>
+            </div>
+          </a>
+        </div>
+      </scroll-view>
+    </div>
+    <reviews :reviews="reviews"></reviews>
   </div>
 </template>
 <script>
 import analyze from "rgbaster";
 import rate from "@/components/rate.vue";
 import scale from "@/components/scale.vue";
-const dataArr = [];
+import ratevalue from "@/components/ratevalue.vue";
+import reviews from "@/components/reviews.vue";
+
 export default {
   data() {
     return {
@@ -222,7 +258,9 @@ export default {
       more: false,
       photos: [],
       scale: [],
-      interests: ""
+      interests: "",
+      recommendations: "",
+      reviews: ""
     };
   },
   created() {},
@@ -231,18 +269,16 @@ export default {
   },
   components: {
     rate,
-    scale
+    scale,
+    ratevalue,
+    reviews
   },
-  onLoad() {
-    Object.assign(this.$data, this.$options.data());
-    // fetch some data
-    dataArr.push({ ...this.$data });
-  },
+  onLoad() {},
   onUnload() {
-    dataArr.pop();
-    const dataNum = dataArr.length;
-    if (!dataNum) return;
-    Object.assign(this.$data, dataArr[dataNum - 1]);
+    // dataArr.pop();
+    // const dataNum = dataArr.length;
+    // if (!dataNum) return;
+    // Object.assign(this.$data, dataArr[dataNum - 1]);
   },
   methods: {
     moresummary() {
@@ -250,7 +286,6 @@ export default {
     }
   },
   mounted() {
-    Object.assign(this.$data, this.$options.data());
     this.title = this.$mp.query.name;
     // console.log(this.$mp.query.id);
     // console.log(this.title);
@@ -338,15 +373,41 @@ export default {
       })
       .catch(err => {});
     fly
-      // .get(
-      //   `https://frodo.douban.com/api/v2/movie/${Number(
-      //     this.$mp.query.id
-      //   )}/interests?start=0&count=4&status=done&apiKey=054022eaeae0b00e0fc068c0c0a2102a`
-      // )
-      .get("http://192.168.43.122:8081/moock/interes.json")
+      .get(
+        `https://frodo.douban.com/api/v2/movie/${Number(
+          this.$mp.query.id
+        )}/interests?start=0&count=4&status=done&apiKey=054022eaeae0b00e0fc068c0c0a2102a`
+      )
+      // .get("http://192.168.43.122:8081/moock/interes.json")
       .then(res => {
         this.interests = res.data.interests;
-        console.log(this.interests);
+        // console.log(this.interests);
+      })
+      .catch(err => {});
+    fly
+      .get(
+        `https://frodo.douban.com/api/v2/movie/${Number(
+          this.$mp.query.id
+        )}/recommendations?apiKey=054022eaeae0b00e0fc068c0c0a2102a`
+      )
+      // .get("http://192.168.43.122:8081/moock/recommendations.json")
+      .then(res => {
+        // console.log(res);
+        this.recommendations = res.data;
+        // console.log(this.recommendations);
+      })
+      .catch(err => {});
+    fly
+      .get(
+        `https://frodo.douban.com/api/v2/movie/${Number(
+          this.$mp.query.id
+        )}/reviews?start=0&count=20&apiKey=054022eaeae0b00e0fc068c0c0a2102a`
+      )
+      // .get("http://192.168.43.122:8081/moock/reviews.json")
+      .then(res => {
+        // console.log(res);
+        this.reviews = res.data;
+        // console.log(this.reviews);
       })
       .catch(err => {});
     // console.log(analyze);
@@ -354,6 +415,9 @@ export default {
     // console.log(this.color);
   },
   computed: {
+    id() {
+      return this.$mp.query.id;
+    },
     // images() {
     //   console.log(this.list.images);
     //   return this.list.images;
@@ -394,6 +458,215 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.hot {
+  height: 426rpx;
+}
+.search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.number-rate-out {
+  display: flex;
+  width: 65%;
+  justify-content: space-evenly;
+}
+.munber-rate {
+  display: inline-block;
+  font-size: 21rpx;
+  padding-left: 10rpx;
+}
+scroll-view {
+  height: 330rpx;
+}
+// .rate {
+//   width: 70%;
+// }
+.more {
+  display: inline-block;
+  margin-right: 10rpx;
+  z-index: 10;
+}
+.more text {
+  color: #42bd56;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fsearch {
+  height: 60rpx;
+  width: 96%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  /* margin: 0 10rpx; */
+  border-radius: 10rpx;
+  align-items: center;
+}
+/* .fsearch:focus {
+  background: #42bd56;
+} */
+.fsearch span {
+  font-size: 30rpx;
+  color: rgb(119, 118, 118);
+}
+.search {
+  width: 100%;
+}
+.search-wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90rpx;
+  color: #fff;
+  background: #42bd56;
+  justify-content: center;
+}
+.search {
+  flex: 1;
+  /* margin: 0 24rpx; */
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 150px;
+}
+
+.form-control {
+  display: block;
+  padding: 0 12px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+}
+.all {
+  width: 7.5rem;
+  height: 1rem;
+  background-color: blue;
+}
+.all:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.left {
+  float: left;
+  width: 3rem;
+  height: 1rem;
+  background-color: red;
+}
+
+.right {
+  float: left;
+  width: 4.5rem;
+  height: 1rem;
+  background-color: green;
+}
+
+.hover_search {
+  opacity: 0.9;
+  background: #aaf1b6;
+}
+
+/* 影院热映 */
+.Cinema {
+  display: flex;
+  justify-content: space-between;
+  float: left;
+  width: 100%;
+  height: 60rpx;
+  /* background: #f90; */
+  margin: 20rpx auto 0;
+  font-family: "黑体";
+}
+.Cinema text:nth-of-type(1) {
+  /* margin-left: 3%; */
+  font-size: 36rpx;
+  margin-left: 23rpx;
+}
+.Cinema text:nth-child(2) {
+  float: right;
+  color: #67ba62;
+  /* margin-right: 3%; */
+  font-size: 33rpx;
+}
+.Cinema .more text {
+  float: right;
+  color: #67ba62;
+  margin-right: 29rpx;
+  margin-left: unset;
+  /* margin-right: 3%; */
+  font-size: 33rpx;
+}
+/* 图片滑动 */
+.uploadWrap {
+  /* float: left; */
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 330rpx;
+}
+.upload_Item {
+  float: left;
+  width: 200rpx;
+  height: 330rpx;
+  line-height: 40rpx;
+  text-align: center;
+  /*  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.upload_Item_img {
+  /* float: left; */
+  width: 170rpx;
+  height: 250rpx;
+  margin: 0 0 0 20rpx;
+  border-radius: 10rpx;
+}
+.loade {
+  background: rgb(228, 228, 228);
+}
+.upload_Item text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 160rpx;
+  font-size: 26rpx;
+  text-align: left;
+}
+
+.iconfont {
+  font-size: 65rpx;
+}
+
+.no-star {
+  width: 100%;
+}
+.no-star-rate {
+  text-align: left;
+  width: 100%;
+}
+
 .main {
   background: #fafaf2;
   .head {
@@ -430,7 +703,7 @@ export default {
         justify-content: space-between;
         margin-top: 50rpx;
         padding: 0 20rpx;
-        span {
+        a {
           //   border: 1px solid rgb(80, 79, 79);
           background: #fff;
           box-shadow: 1px 1px 1px rgba(158, 158, 158, 0.3);
@@ -694,6 +967,11 @@ export default {
         > div:nth-of-type(2) {
           display: flex;
           margin-top: 10rpx;
+          // justify-content: center;
+          align-items: center;
+          > span:nth-of-type(1) {
+            padding-left: 10rpx;
+          }
         }
       }
     }
